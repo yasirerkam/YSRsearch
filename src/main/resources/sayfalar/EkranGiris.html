@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:true,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:false,&quot;SNAPPING_DISTANCE&quot;:4,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout caption="temelCati" responsive>
+   <vaadin-grid-layout caption="arkaPlaniSekillendirmekIcinCati" responsive size-full>
+    <row expand="1">
+     <column expand="1">
+      <vaadin-image responsive width-full _id="arkaPlan" :middle :center></vaadin-image>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+   <vaadin-absolute-layout caption="AnaCati" responsive>
+    <vaadin-vertical-split-panel caption="UsttenBol" locked split-position="8%">
+     <vaadin-absolute-layout caption="UstBolum">
+      <vaadin-horizontal-layout responsive height="30px" :top="15px" :right="15px">
+       <vaadin-button icon="fonticon://Vaadin-Icons/e761" responsive width="110px" height="25px" plain-text _id="buttonUrlGir" :right>
+         URL Gir 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="110px" height="25px" plain-text _id="buttonSearchOnPage" :right>
+         on Page 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="110px" height="25px" plain-text _id="buttonSearchURL">
+         URL Srla 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="110px" height="25px" plain-text _id="buttonSearchSite">
+         Site Srla 
+       </vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="110px" height="25px" plain-text _id="buttonSearchSemantik">
+         Semantik 
+       </vaadin-button>
+      </vaadin-horizontal-layout>
+     </vaadin-absolute-layout>
+     <vaadin-vertical-split-panel caption="AlttanBol" responsive locked split-position="92%">
+      <vaadin-grid-layout caption="OrtaBolum" spacing responsive size-full margin-bottom>
+       <row>
+        <column>
+         <vaadin-absolute-layout responsive width="60%" height="80%" :middle :center>
+          <vaadin-vertical-split-panel responsive locked split-position="60%">
+           <vaadin-grid-layout responsive size-full>
+            <row expand="1">
+             <column expand="1">
+              <vaadin-image responsive height-full _id="ysrSearch" :middle :center></vaadin-image>
+             </column>
+            </row>
+           </vaadin-grid-layout>
+           <vaadin-grid-layout responsive size-full>
+            <row>
+             <column>
+              <vaadin-vertical-layout responsive width="70%" height="60%" margin="false" :center>
+               <vaadin-text-field responsive size-full _id="aramaAlani" :center :expand="0.6"></vaadin-text-field>
+               <vaadin-horizontal-layout responsive size-full :center :expand="0.4">
+                <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="100px" height-full plain-text _id="buttonSearch" :center>
+                  Search 
+                </vaadin-button>
+               </vaadin-horizontal-layout>
+              </vaadin-vertical-layout>
+             </column>
+            </row>
+           </vaadin-grid-layout>
+          </vaadin-vertical-split-panel>
+         </vaadin-absolute-layout>
+        </column>
+       </row>
+      </vaadin-grid-layout>
+      <vaadin-grid-layout caption="AltBolum" size-full>
+       <row>
+        <column>
+         <vaadin-button icon="fonticon://Vaadin-Icons/e7cf" style-name="huge borderless-colored icon-only borderless" responsive width="50px" height="50px" plain-text _id="buttonChangeLeft" :middle></vaadin-button>
+        </column>
+        <column>
+         <vaadin-label style-name="align-center" width="248px" plain-text :middle :center>
+           Yasir Erkam Özdemir 
+         </vaadin-label>
+        </column>
+        <column>
+         <vaadin-button icon="fonticon://Vaadin-Icons/e7d0" style-name="huge icon-only borderless borderless-colored" responsive width="50px" height="50px" plain-text _id="buttonChangeRight" :middle :right></vaadin-button>
+        </column>
+       </row>
+      </vaadin-grid-layout>
+     </vaadin-vertical-split-panel>
+    </vaadin-vertical-split-panel>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>

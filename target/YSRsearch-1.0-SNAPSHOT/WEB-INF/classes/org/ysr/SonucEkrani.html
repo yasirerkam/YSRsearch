@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout caption="temelCati" responsive>
+   <vaadin-grid-layout responsive size-full>
+    <row expand="1">
+     <column expand="1">
+      <vaadin-image responsive size-full></vaadin-image>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+   <vaadin-grid-layout caption="AnaCati" responsive size-full margin-left margin-right>
+    <row>
+     <column>
+      <vaadin-vertical-split-panel responsive split-position="10%">
+       <vaadin-horizontal-layout spacing="false" responsive size-full>
+        <vaadin-absolute-layout responsive :middle :center :expand="0.1">
+         <vaadin-grid-layout responsive size-full>
+          <row>
+           <column>
+            <vaadin-grid-layout responsive width="80%" height="70%" :middle :center>
+             <row>
+              <column>
+               <vaadin-image responsive height-full alt="" _id="imageYsrSearch" :middle :center></vaadin-image>
+              </column>
+             </row>
+            </vaadin-grid-layout>
+           </column>
+          </row>
+         </vaadin-grid-layout>
+         <vaadin-button style-name="borderless icon-only" responsive size-full plain-text _id="butonAnaSayfa"></vaadin-button>
+        </vaadin-absolute-layout>
+        <vaadin-horizontal-layout responsive size-full :middle :expand="0.9">
+         <vaadin-text-field placeholder="" width-full height="70%" _id="aramaAlaniSS" :middle :expand="0.5"></vaadin-text-field>
+         <vaadin-horizontal-split-panel responsive locked height="65%" split-position="115px" :middle :expand="0.5">
+          <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="100px" height-full plain-text _id="buttonSearchSS">
+            Search 
+          </vaadin-button>
+          <vaadin-button icon="fonticon://Vaadin-Icons/e805" enabled="false" responsive width="105px" height-full plain-text _id="buttonSearchOnPageSS">
+            on Page 
+          </vaadin-button>
+         </vaadin-horizontal-split-panel>
+        </vaadin-horizontal-layout>
+       </vaadin-horizontal-layout>
+       <vaadin-tab-sheet responsive size-full _id="tabSheet">
+        <tab caption="All" selected>
+         <vaadin-vertical-split-panel responsive split-position="90%" _id="tabAll">
+          <vaadin-tab-sheet responsive size-full :second>
+           <tab caption="Tab1" selected>
+            <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+             <vaadin-vertical-layout responsive size-full margin="false" :expand="0.25">
+              <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link" :middle :expand="0.14"></vaadin-link>
+              <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl" :middle :expand="0.12">
+                url buraya 
+              </vaadin-label>
+              <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik" :bottom :expand="0.74"></vaadin-label>
+             </vaadin-vertical-layout>
+             <vaadin-vertical-layout responsive size-full margin="false" :expand="0.25">
+              <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link1" :middle :expand="0.14"></vaadin-link>
+              <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl1" :middle :expand="0.12">
+                url buraya 
+              </vaadin-label>
+              <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik1" :bottom :expand="0.74"></vaadin-label>
+             </vaadin-vertical-layout>
+             <vaadin-vertical-layout responsive size-full margin="false" :expand="0.25">
+              <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link2" :middle :expand="0.14"></vaadin-link>
+              <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl2" :middle :expand="0.12">
+                url buraya 
+              </vaadin-label>
+              <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik2" :bottom :expand="0.74"></vaadin-label>
+             </vaadin-vertical-layout>
+             <vaadin-vertical-layout responsive size-full margin="false" :expand="0.25">
+              <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link3" :middle :expand="0.14"></vaadin-link>
+              <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl3" :middle :expand="0.12">
+                url burayal 
+              </vaadin-label>
+              <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik3" :bottom :expand="0.74"></vaadin-label>
+             </vaadin-vertical-layout>
+            </vaadin-vertical-layout>
+           </tab>
+           <tab caption="Tab">
+            <vaadin-vertical-layout margin="false">
+             <vaadin-label plain-text>
+               Label 
+             </vaadin-label>
+            </vaadin-vertical-layout>
+           </tab>
+          </vaadin-tab-sheet>
+         </vaadin-vertical-split-panel>
+        </tab>
+        <tab caption="Images">
+         <vaadin-grid-layout caption="Images" responsive size-full _id="tabImages"></vaadin-grid-layout>
+        </tab>
+        <tab caption="Search on Page">
+         <vaadin-absolute-layout responsive _id="tabSearchOnPage">
+          <vaadin-label width-full plain-text _id="onPageSonuc" :top="30px" :left="30px">
+            Label 
+          </vaadin-label>
+         </vaadin-absolute-layout>
+        </tab>
+        <tab caption="Page (URL) Rank">
+         <vaadin-absolute-layout size-auto _id="tabPage_URL_Rank">
+          <vaadin-grid>
+           <table>
+            <colgroup>
+             <col column-id="project" sortable="false">
+             <col column-id="status" sortable="false">
+            </colgroup>
+            <thead>
+             <tr default>
+              <th plain-text column-ids="project">Project</th>
+              <th plain-text column-ids="status">Status</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr item="project1">
+              <td>Customer Project 1</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project2">
+              <td>Customer Project 2</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project3">
+              <td>Customer Project 3</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project4">
+              <td>Customer Project 4</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project5">
+              <td>Customer Project 5</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project6">
+              <td>Customer Project 6</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project7">
+              <td>Customer Project 7</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project8">
+              <td>Customer Project 8</td>
+              <td>OK</td>
+             </tr>
+             <tr item="project9">
+              <td>Customer Project 9</td>
+              <td>OK</td>
+             </tr>
+            </tbody>
+           </table>
+          </vaadin-grid>
+         </vaadin-absolute-layout>
+        </tab>
+        <tab caption="WebSite Rank">
+         <vaadin-absolute-layout size-auto _id="tabWebSiteRank"></vaadin-absolute-layout>
+        </tab>
+        <tab caption="Semantic Rank">
+         <vaadin-absolute-layout size-auto _id="tabSemanticRank"></vaadin-absolute-layout>
+        </tab>
+       </vaadin-tab-sheet>
+      </vaadin-vertical-split-panel>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>

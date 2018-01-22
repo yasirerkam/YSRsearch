@@ -1,0 +1,6 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<init-param>
+		<param-name>useFileMappedBuffer</param-name>
+		<param-value>false</param-value> <!-- change to false -->
+	</init-param>
+</web-app>

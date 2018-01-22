@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-panel responsive size-full>
+   <vaadin-grid-layout caption-as-html icon="anaCati" responsive size-full margin-left margin-right margin-bottom>
+    <row>
+     <column>
+      <vaadin-vertical-split-panel responsive locked split-position="14%">
+       <vaadin-horizontal-layout spacing="false" responsive size-full>
+        <vaadin-absolute-layout responsive :middle :center :expand="0.1">
+         <vaadin-grid-layout responsive size-full>
+          <row>
+           <column>
+            <vaadin-grid-layout responsive width-full height="50px" :middle :center>
+             <row>
+              <column>
+               <vaadin-image responsive height-full alt="" _id="imageYsrSearch" :middle :center></vaadin-image>
+              </column>
+             </row>
+            </vaadin-grid-layout>
+           </column>
+          </row>
+         </vaadin-grid-layout>
+         <vaadin-button style-name="borderless icon-only" responsive width-full height="50px" plain-text _id="butonAnaSayfa" :top="20px" :bottom="50%" :left="0px"></vaadin-button>
+        </vaadin-absolute-layout>
+        <vaadin-horizontal-layout responsive size-full :middle :expand="0.9">
+         <vaadin-text-field placeholder="" width-full height="50px" _id="aramaAlaniSS" :middle :expand="0.5"></vaadin-text-field>
+         <vaadin-horizontal-split-panel responsive locked height="50px" split-position="115px" :middle :expand="0.5">
+          <vaadin-button icon="fonticon://Vaadin-Icons/e805" responsive width="100px" height-full plain-text _id="buttonSearchSS">
+            Search 
+          </vaadin-button>
+          <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e805" responsive width="105px" height-full plain-text _id="buttonSearchOnPageSS">
+            on Page 
+          </vaadin-button>
+         </vaadin-horizontal-split-panel>
+        </vaadin-horizontal-layout>
+       </vaadin-horizontal-layout>
+       <vaadin-tab-sheet style-name="padded-tabbar" responsive size-full _id="tabSheet">
+        <tab caption="All" selected>
+         <vaadin-absolute-layout responsive _id="tabAll">
+          <vaadin-tab-sheet responsive size-full>
+           <tab caption="1" selected>
+            <vaadin-panel responsive _id="panelAll">
+             <vaadin-vertical-layout responsive margin-right="false" margin-top="false" margin-bottom="false" _id="sfAll">
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc1">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link1" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl1" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik1" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc2">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link2" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl2" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik2" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc3">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link3" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl3" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik3" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc4">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link4" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl4" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik4" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc5">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link5" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl5" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik5" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc6">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link6" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl6" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik6" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc7">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link7" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl7" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik7" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc8">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link8" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl8" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik8" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+              <vaadin-vertical-layout spacing="false" responsive size-full margin="false" _id="sonuc9">
+               <vaadin-link caption="Başlık yazısı" style-name="large" responsive size-full _id="link9" :middle :expand="0.14"></vaadin-link>
+               <vaadin-label style-name="text_yesil" responsive size-full plain-text _id="labelUrl9" :middle :expand="0.12">
+                 url buraya 
+               </vaadin-label>
+               <vaadin-label style-name="cut_text" responsive size-full plain-text _id="labelIcerik9" :bottom :expand="0.74"></vaadin-label>
+              </vaadin-vertical-layout>
+             </vaadin-vertical-layout>
+            </vaadin-panel>
+           </tab>
+          </vaadin-tab-sheet>
+         </vaadin-absolute-layout>
+        </tab>
+        <tab caption="Images">
+         <vaadin-grid-layout caption="Images" responsive size-full _id="tabImages"></vaadin-grid-layout>
+        </tab>
+        <tab caption="Search on Page">
+         <vaadin-absolute-layout responsive _id="tabSearchOnPage">
+          <vaadin-label width-full plain-text _id="onPageSonuc" :top="30px" :left="30px">
+            Label 
+          </vaadin-label>
+         </vaadin-absolute-layout>
+        </tab>
+        <tab caption="Page (URL) Rank">
+         <vaadin-panel responsive size-full _id="tabPage_URL_Rank">
+          <vaadin-grid responsive width-full data-item-type="main.BenimURL" _id="gridUrlRank">
+           <table>
+            <colgroup>
+             <col column-id="sirasi" sortable>
+             <col column-id="puani" sortable>
+             <col column-id="anhtrKlmlrnBlnmaSayisi" sortable>
+             <col column-id="url" sortable>
+            </colgroup>
+            <thead>
+             <tr default>
+              <th plain-text column-ids="sirasi">Sırası</th>
+              <th plain-text column-ids="puani">Puanı</th>
+              <th plain-text column-ids="anhtrKlmlrnBlnmaSayisi">Keyword Sayıları</th>
+              <th plain-text column-ids="url">URL</th>
+             </tr>
+            </thead>
+            <tbody></tbody>
+           </table>
+          </vaadin-grid>
+         </vaadin-panel>
+        </tab>
+        <tab caption="WebSite Rank">
+         <vaadin-panel responsive size-full _id="tabWebSiteRank">
+          <vaadin-grid width-full _id="gridWebSiteRank"></vaadin-grid>
+         </vaadin-panel>
+        </tab>
+        <tab caption="Semantic Rank">
+         <vaadin-panel responsive size-auto _id="tabSemanticRank"></vaadin-panel>
+        </tab>
+        <tab caption="Url Al">
+         <vaadin-absolute-layout responsive _id="panelDosyaAl">
+          <vaadin-grid-layout responsive size-full>
+           <row>
+            <column>
+             <vaadin-image responsive height-full _id="drag_drop" :middle :center></vaadin-image>
+            </column>
+           </row>
+          </vaadin-grid-layout>
+         </vaadin-absolute-layout>
+        </tab>
+       </vaadin-tab-sheet>
+      </vaadin-vertical-split-panel>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+  </vaadin-panel>
+ </body>
+</html>
