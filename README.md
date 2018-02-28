@@ -56,7 +56,7 @@ If Vaadin pre-releases are not enabled by default, use the Maven parameter
 ScreenShots
 -------------------------
 
-![screenshot-2018-1-22 http localhost](https://user-images.githubusercontent.com/27684451/35201015-5fed9f16-ff28-11e7-8253-05885d48410b.png)
 ![screenshot-2018-1-22 http localhost 2](https://user-images.githubusercontent.com/27684451/35201013-5f9cae94-ff28-11e7-8bce-b07a118b52cc.png)
+![screenshot-2018-1-22 http localhost](https://user-images.githubusercontent.com/27684451/35201015-5fed9f16-ff28-11e7-8253-05885d48410b.png)
 ![screenshot-2018-1-22 http localhost](https://user-images.githubusercontent.com/27684451/35201014-5fcc1bac-ff28-11e7-9ad9-bc5a787d022c.jpg)
 ![screenshot-2018-1-22 http localhost 1](https://user-images.githubusercontent.com/27684451/35201016-6056d5e4-ff28-11e7-98ce-f7ae00c3f0e2.png)
